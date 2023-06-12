@@ -1,3 +1,5 @@
-router.get("/", (req, res) => {res.send("Melany Rodriguez")})
+const routes = (req, res, next) => {
+  res.json('Melany Rodriguez');
+};
 
-module.exports = router;
+module.exports = {routes};

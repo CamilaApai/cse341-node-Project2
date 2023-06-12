@@ -1,1 +1,4 @@
 GET http://localhost:3000 HTTP/1.1
+
+###
+GET https://cse341-node-w01.onrender.com HTTP/1.1
