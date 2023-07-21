@@ -1,5 +1,5 @@
-const routes = (req, res, next) => {
+const router = (req, res, next) => {
   res.json('Melany Rodriguez');
 };
 
-module.exports = {routes};
+module.exports = {router};

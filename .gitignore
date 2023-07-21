@@ -1,1 +1,3 @@
+// The following files won't be visible on Github.
 node_modules
+.env

@@ -1,0 +1,25 @@
+{ 
+"contact": {
+    "firstName":"Kate", 
+    "lastName":"Martinez", 
+    "email":"katemartinez@gmail.com", 
+    "favoriteColor":"blue", 
+    "birthday":"01/12"
+},
+
+"contact2": {
+    "firstName":"Gabriel",
+    "lastName":"Clavero",
+    "email":"gabrielclavero@gmail.com",
+    "favoriteColor":"purple", 
+    "birthday":"04/10"
+},
+
+"contact3": {
+    "firstName":"Karen", 
+    "lastName":"Rodriguez", 
+    "email":"@krodriguez@gmail.com", 
+    "favoriteColor":"pink", 
+    "birthday":"11/06"
+}
+}
