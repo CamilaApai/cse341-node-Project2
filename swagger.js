@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'Description',
   },
-  host: 'https://cse341-node-k3hx.onrender.com',
+  host: 'cse341-node-k3hx.onrender.com',
   schemes: ['http'],
 };
 
@@ -14,9 +14,3 @@ const endpointsFiles = ['./routes/index.js'];
 
 // Generate swagger.json
 swaggerAutogen(outputFile, endpointsFiles, doc);
-
-/* NOTE: if you use the express Router, you must pass in the 
-   'endpointsFiles' only the root file where the route starts,
-   such as index.js, app.js, routes.js, ... */
-
-//swaggerAutogen(outputFile, endpointsFiles, doc);
