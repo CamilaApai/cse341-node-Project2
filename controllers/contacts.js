@@ -2,7 +2,7 @@ const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 // Get the entire Contacts collection.
-async function getAllContacts(req, res, next) {
+async function getAllContacts(req, res) {
   const result = await mongodb.getDb().db().collection('contacts').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
@@ -11,7 +11,7 @@ async function getAllContacts(req, res, next) {
 }
 
 // Get a single Contact from the contacts collection by id.
-async function getSingleContact(req, res, next) {
+async function getSingleContact(req, res) {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('contacts').find({ _id: userId });
   result.toArray().then((lists) => {
@@ -21,7 +21,7 @@ async function getSingleContact(req, res, next) {
 }
 
 // Add a new Contact to the contacts collection.
-async function addContact(req, res, next) {
+async function addContact(req, res) {
   try {
     const contact = {
       firstName: req.body.firstName,
@@ -44,7 +44,7 @@ async function addContact(req, res, next) {
 }
 
 // Update one of the Contacts from the contacts collection by id.
-async function updateContact(req, res, next) {
+async function updateContact(req, res) {
   try {
     const userId = new ObjectId(req.params.id);
     const contact = {
@@ -67,7 +67,7 @@ async function updateContact(req, res, next) {
 }
 
 // Delete a Contact from the contacts collection by id.
-async function deleteContact(req, res, next) {
+async function deleteContact(req, res) {
   try {
     const userId = new ObjectId(req.params.id);
     const response = await mongodb.getDb().db().collection('contacts').remove({ _id: userId }, true);

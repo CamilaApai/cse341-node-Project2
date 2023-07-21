@@ -1,4 +1,4 @@
-const router = (req, res, next) => {
+const router = (req, res) => {
   res.json('Melany Rodriguez');
 };
 
