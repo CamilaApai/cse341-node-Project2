@@ -24,7 +24,7 @@ content-type: application/json
 }
 
 ### Update contact
-PUT http://localhost:8000/contacts/64ba94224dfd7409961fc73c HTTP/1.1
+PUT http://localhost:8000/contacts/64baed345d25a245aa4ec514 HTTP/1.1
 content-type: application/json
 
 {
@@ -36,15 +36,15 @@ content-type: application/json
 }
 
 ### Delete contact
-DELETE http://localhost:8000/contacts/64ba94224dfd7409961fc73c HTTP/1.1
+DELETE http://localhost:8000/contacts/64baed345d25a245aa4ec514 HTTP/1.1
 content-type: application/json
 
 ### PRODUCTION DEPLOY
 
-### Get all contacts
-GET https://cse341-node-w01.onrender.com HTTP/1.1
-###
 GET https://cse341-node-k3hx.onrender.com http/1.1
+
+### Get all contacts
+GET http://cse341-node-k3hx.onrender.com/contacts
 
 ### Get contact 1 by id 
 GET http://cse341-node-k3hx.onrender.com/contacts/64870266ecec3463d7136001
@@ -52,3 +52,31 @@ GET http://cse341-node-k3hx.onrender.com/contacts/64870266ecec3463d7136001
 GET http://cse341-node-k3hx.onrender.com/contacts/648704bfecec3463d7136003
 ### Get contact 3 by id 
 GET http://cse341-node-k3hx.onrender.com/contacts/6487052becec3463d7136004
+
+### Create contact
+POST http://cse341-node-k3hx.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+"firstName": "Camila",
+"lastName": "Apai",
+"email": "camilaapai@hotmail.com",
+"favoriteColor": "red",
+"birthday": "07/01"
+}
+
+### Update contact
+PUT http://cse341-node-k3hx.onrender.com/contacts/64baed6920458270a21a8e8e HTTP/1.1
+content-type: application/json
+
+{
+"firstName": "Camila",
+"lastName": "Apai",
+"email": "camilaapai@hotmail.com",
+"favoriteColor": "green",
+"birthday": "01/07"
+}
+
+### Delete contact
+DELETE http://cse341-node-k3hx.onrender.com/contacts/64baed6920458270a21a8e8e HTTP/1.1
+content-type: application/json
