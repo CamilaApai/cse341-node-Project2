@@ -8,7 +8,7 @@
   "host": "cse341-node-k3hx.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
