@@ -5,22 +5,12 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "cse341-node-k3hx.onrender.com",
+  "host": "https://cse341-node-project2-h4kd.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
   ],
   "paths": {
-    "/": {
-      "get": {
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api-docs": {
       "get": {
         "description": "",
@@ -31,7 +21,7 @@
         }
       }
     },
-    "/contacts/": {
+    "/singers/": {
       "get": {
         "description": "",
         "produces": [
@@ -58,13 +48,19 @@
                 "lastName": {
                   "example": "any"
                 },
-                "email": {
-                  "example": "any"
-                },
-                "favoriteColor": {
+                "age": {
                   "example": "any"
                 },
                 "birthday": {
+                  "example": "any"
+                },
+                "birthYear": {
+                  "example": "any"
+                },
+                "birthTown": {
+                  "example": "any"
+                },
+                "country": {
                   "example": "any"
                 }
               }
@@ -81,7 +77,7 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "/singers/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -109,41 +105,11 @@
             "in": "path",
             "required": true,
             "type": "string"
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "firstName": {
-                  "example": "any"
-                },
-                "lastName": {
-                  "example": "any"
-                },
-                "email": {
-                  "example": "any"
-                },
-                "favoriteColor": {
-                  "example": "any"
-                },
-                "birthday": {
-                  "example": "any"
-                }
-              }
-            }
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "204": {
-            "description": "No Content"
-          },
-          "500": {
-            "description": "Internal Server Error"
+          "default": {
+            "description": ""
           }
         }
       },
