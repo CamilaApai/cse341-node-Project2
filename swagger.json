@@ -43,6 +43,9 @@
         }
       },
       "post": {
+        "tags": [
+          "Singers Collection"
+        ],
         "description": "Add a singer",
         "parameters": [
           {
