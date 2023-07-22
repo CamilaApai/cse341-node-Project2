@@ -43,315 +43,355 @@
         }
       },
       "post": {
-        "description": "Add a singer",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "firstName": {
-                  "example": "any"
+        "get": {
+          "tags": [
+            "Singers Collection"
+          ],
+          "description": "Add a singer",
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "firstName": {
+                    "example": "any"
+                  },
+                  "lastName": {
+                    "example": "any"
+                  },
+                  "age": {
+                    "example": "any"
+                  },
+                  "birthday": {
+                    "example": "any"
+                  },
+                  "birthYear": {
+                    "example": "any"
+                  },
+                  "birthTown": {
+                    "example": "any"
+                  },
+                  "country": {
+                    "example": "any"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Created"
+            },
+            "400": {
+              "description": "Bad Request"
+            },
+            "500": {
+              "description": "Internal Server Error"
+            }
+          }
+        }
+      },
+      "/singers/{id}": {
+        "get": {
+          "tags": [
+            "Singers Collection"
+          ],
+          "description": "Search singer by id",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true,
+              "type": "string"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            },
+            "400": {
+              "description": "Bad Request"
+            },
+            "500": {
+              "description": "Internal Server Error"
+            }
+          }
+        },
+        "put": {
+          "get": {
+            "tags": [
+              "Singers Collection"
+            ],
+            "description": "Update the singer information by id",
+            "parameters": [
+              {
+                "name": "id",
+                "in": "path",
+                "required": true,
+                "type": "string"
+              },
+              {
+                "name": "body",
+                "in": "body",
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "firstName": {
+                      "example": "any"
+                    },
+                    "lastName": {
+                      "example": "any"
+                    },
+                    "age": {
+                      "example": "any"
+                    },
+                    "birthday": {
+                      "example": "any"
+                    },
+                    "birthYear": {
+                      "example": "any"
+                    },
+                    "birthTown": {
+                      "example": "any"
+                    },
+                    "country": {
+                      "example": "any"
+                    }
+                  }
+                }
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "OK"
+              },
+              "204": {
+                "description": "No Content"
+              },
+              "400": {
+                "description": "Bad Request"
+              },
+              "500": {
+                "description": "Internal Server Error"
+              }
+            }
+          },
+          "delete": {
+            "get": {
+              "tags": [
+                "Singers Collection"
+              ],
+              "description": "Delete a singer by id",
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK"
                 },
-                "lastName": {
-                  "example": "any"
+                "400": {
+                  "description": "Bad Request"
                 },
-                "age": {
-                  "example": "any"
+                "404": {
+                  "description": "Not Found"
                 },
-                "birthday": {
-                  "example": "any"
+                "500": {
+                  "description": "Internal Server Error"
+                }
+              }
+            }
+          },
+          "/albums/": {
+            "get": {
+              "tags": [
+                "Albums Collection"
+              ],
+              "description": "Get all albums ",
+              "produces": [
+                "application/json"
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK"
                 },
-                "birthYear": {
-                  "example": "any"
+                "500": {
+                  "description": "Internal Server Error"
+                }
+              }
+            }
+          },
+          "post": {
+            "get": {
+              "tags": [
+                "Albums Collection"
+              ],
+              "description": "Add an album",
+              "parameters": [
+                {
+                  "name": "body",
+                  "in": "body",
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "artist": {
+                        "example": "any"
+                      },
+                      "albumAmount": {
+                        "example": "any"
+                      },
+                      "firstAlbum": {
+                        "example": "any"
+                      },
+                      "lastAlbum": {
+                        "example": "any"
+                      },
+                      "mostSuccessfulAlbum": {
+                        "example": "any"
+                      }
+                    }
+                  }
+                }
+              ],
+              "responses": {
+                "201": {
+                  "description": "Created"
                 },
-                "birthTown": {
-                  "example": "any"
+                "400": {
+                  "description": "Bad Request"
                 },
-                "country": {
-                  "example": "any"
+                "500": {
+                  "description": "Internal Server Error"
+                }
+              }
+            }
+          },
+          "/albums/{id}": {
+            "get": {
+              "tags": [
+                "Albums Collection"
+              ],
+              "description": "Search album by id",
+              "produces": [
+                "application/json"
+              ],
+              "parameters": [
+                {
+                  "name": "id",
+                  "in": "path",
+                  "required": true,
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK"
+                },
+                "400": {
+                  "description": "Bad Request"
+                },
+                "500": {
+                  "description": "Internal Server Error"
+                }
+              }
+            },
+            "put": {
+              "get": {
+                "tags": [
+                  "Albums Collection"
+                ],
+                "description": "Update the album information by id",
+                "parameters": [
+                  {
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                  },
+                  {
+                    "name": "body",
+                    "in": "body",
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "artist": {
+                          "example": "any"
+                        },
+                        "albumAmount": {
+                          "example": "any"
+                        },
+                        "firstAlbum": {
+                          "example": "any"
+                        },
+                        "lastAlbum": {
+                          "example": "any"
+                        },
+                        "mostSuccessfulAlbum": {
+                          "example": "any"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "responses": {
+                  "200": {
+                    "description": "OK"
+                  },
+                  "204": {
+                    "description": "No Content"
+                  },
+                  "400": {
+                    "description": "Bad Request"
+                  },
+                  "500": {
+                    "description": "Internal Server Error"
+                  }
+                }
+              },
+              "delete": {
+                "get": {
+                  "tags": [
+                    "Albums Collection"
+                  ],
+                  "description": "Delete an album by id",
+                  "parameters": [
+                    {
+                      "name": "id",
+                      "in": "path",
+                      "required": true,
+                      "type": "string"
+                    }
+                  ],
+                  "responses": {
+                    "200": {
+                      "description": "OK"
+                    },
+                    "400": {
+                      "description": "Bad Request"
+                    },
+                    "404": {
+                      "description": "Not Found"
+                    },
+                    "500": {
+                      "description": "Internal Server Error"
+                    }
+                  }
                 }
               }
             }
           }
-        ],
-        "responses": {
-          "201": {
-            "description": "Created"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
         }
-      }
-    },
-    "/singers/{id}": {
-      "get": {
-        "description": "Search singer by id",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      },
-      "put": {
-        "description": "Update the singer information by id",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "firstName": {
-                  "example": "any"
-                },
-                "lastName": {
-                  "example": "any"
-                },
-                "age": {
-                  "example": "any"
-                },
-                "birthday": {
-                  "example": "any"
-                },
-                "birthYear": {
-                  "example": "any"
-                },
-                "birthTown": {
-                  "example": "any"
-                },
-                "country": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "204": {
-            "description": "No Content"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      },
-      "delete": {
-        "description": "Delete a singer by id",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/albums/": {
-      "get": {
-        "description": "Get all albums ",
-        "produces": [
-          "application/json"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      },
-      "post": {
-        "description": "Add a album",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "artist": {
-                  "example": "any"
-                },
-                "albumAmount": {
-                  "example": "any"
-                },
-                "firstAlbum": {
-                  "example": "any"
-                },
-                "lastAlbum": {
-                  "example": "any"
-                },
-                "mostSuccessfulAlbum": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Created"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/albums/{id}": {
-      "get": {
-        "description": "Search album by id",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      },
-      "put": {
-        "description": "Update the album information by id",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "artist": {
-                  "example": "any"
-                },
-                "albumAmount": {
-                  "example": "any"
-                },
-                "firstAlbum": {
-                  "example": "any"
-                },
-                "lastAlbum": {
-                  "example": "any"
-                },
-                "mostSuccessfulAlbum": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "204": {
-            "description": "No Content"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      },
-      "delete": {
-        "description": "Delete a album by id",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      }
+      }   
     }
   }
 }
+          
