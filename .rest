@@ -21,7 +21,6 @@ content-type: application/json
 "country":"United States"
 }
 
-
 ### Update singer
 PUT http://localhost:8000/singers/64bb365bda25c520846cd651 HTTP/1.1
 content-type: application/json
@@ -45,19 +44,35 @@ content-type: application/json
 GET http://localhost:8000/albums HTTP/1.1
 
 ### Get album by id 
-GET http://localhost:8000/albums/
+GET http://localhost:8000/albums/64bb51395c35ca2968f6ef61
 
 ### Create album
 POST http://localhost:8000/albums HTTP/1.1
 content-type: application/json
 
 {
-"artist": "Taylor Swift",
-"albumAmount": "10 studio albums",
-"firstAlbum": "Taylor Swift",
-"lastAlbum": "Midnights",
-"mostSuccessfulAlbum": "1989"
+"artist": "Selena",
+"albumAmount": "4",
+"firstAlbum": "Stars",
+"lastAlbum": "Rare",
+"mostSuccessfulAlbum": "Revival"
 }
+
+### Update singer
+PUT http://localhost:8000/albums/64bb51df2ffcd0c14622299c HTTP/1.1
+content-type: application/json
+
+{
+"artist": "Selena Gomez",
+"albumAmount": "4 studio albums",
+"firstAlbum": "Stars Dance",
+"lastAlbum": "Rare",
+"mostSuccessfulAlbum": "Revival"
+}
+
+### Delete singer
+DELETE http://localhost:8000/albums/64bb51df2ffcd0c14622299c HTTP/1.1
+content-type: application/json
 
 ### PRODUCTION DEPLOY
 
@@ -102,3 +117,38 @@ DELETE http://cse341-node-project2-h4kd.onrender.com/singers/64baed6920458270a21
 content-type: application/json
 
 ### ALBUMS
+
+### Get all albums
+GET http://cse341-node-project2-h4kd.onrender.com/albums
+
+### Get singer by id 
+GET http://cse341-node-project2-h4kd.onrender.com/albums/64bb14b235ad9024a2946fce
+
+### Create singer
+POST http://cse341-node-project2-h4kd.onrender.com/albums HTTP/1.1
+content-type: application/json
+
+{
+"artist": "Selena",
+"albumAmount": "4",
+"firstAlbum": "Stars",
+"lastAlbum": "Rare",
+"mostSuccessfulAlbum": "Revival"
+}
+
+
+### Update singer
+PUT http://cse341-node-project2-h4kd.onrender.com/albums/64bb18654874ecaec2876e93 HTTP/1.1
+content-type: application/json
+
+{
+"artist": "Selena Gomez",
+"albumAmount": "4 studio albums",
+"firstAlbum": "Stars Dance",
+"lastAlbum": "Rare",
+"mostSuccessfulAlbum": "Revival"
+}
+
+### Delete singer
+DELETE http://cse341-node-project2-h4kd.onrender.com/albums/64baed6920458270a21a8e8e HTTP/1.1
+content-type: application/json
