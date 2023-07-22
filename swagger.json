@@ -90,10 +90,10 @@
       }
     },
     "/singers/{id}": {
-      "get": {
+     "get": {
         "tags": [
           "Singers Collection"
-        ],
+        ], 
         "description": "Search singer by id",
         "produces": [
           "application/json"
@@ -119,6 +119,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Singers Collection"
+        ], 
         "description": "Update the singer information by id",
         "parameters": [
           {
@@ -174,6 +177,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Singers Collection"
+        ], 
         "description": "Delete a singer by id",
         "parameters": [
           {
@@ -201,6 +207,9 @@
     },
     "/albums/": {
       "get": {
+        "tags": [
+          "Albums Collection"
+        ], 
         "description": "Get all albums ",
         "produces": [
           "application/json"
@@ -215,6 +224,9 @@
         }
       },
       "post": {
+        "tags": [
+          "Albums Collection"
+        ], 
         "description": "Add a album",
         "parameters": [
           {
@@ -257,6 +269,9 @@
     },
     "/albums/{id}": {
       "get": {
+        "tags": [
+          "Albums Collection"
+        ], 
         "description": "Search album by id",
         "produces": [
           "application/json"
@@ -282,6 +297,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Albums Collection"
+        ], 
         "description": "Update the album information by id",
         "parameters": [
           {
@@ -331,6 +349,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Albums Collection"
+        ], 
         "description": "Delete a album by id",
         "parameters": [
           {
