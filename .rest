@@ -4,7 +4,7 @@
 GET http://localhost:8000/singers HTTP/1.1
 
 ### Get singer by id 
-GET http://localhost:8000/singers/64bb11da82138f57dd9c5add
+GET http://localhost:8000/singers/64bb14b235ad9024a2946fce
 
 ### Create singer
 POST http://localhost:8000/singers HTTP/1.1
@@ -22,7 +22,7 @@ content-type: application/json
 
 
 ### Update singer
-PUT http://localhost:8000/singers/64bb18654874ecaec2876e93 HTTP/1.1
+PUT http://localhost:8000/singers/64bb365bda25c520846cd651 HTTP/1.1
 content-type: application/json
 
 {
@@ -36,7 +36,7 @@ content-type: application/json
 }
 
 ### Delete singer
-DELETE http://localhost:8000/singers/64bb11da82138f57dd9c5add HTTP/1.1
+DELETE http://localhost:8000/singers/64bb365bda25c520846cd651 HTTP/1.1
 content-type: application/json
 
 ### PRODUCTION DEPLOY
@@ -44,8 +44,8 @@ content-type: application/json
 ### Get all singers
 GET http://cse341-node-project2-h4kd.onrender.com/singers
 
-### Get singer 1 by id 
-GET http://cse341-node-project2-h4kd.onrender.com/singers/64870266ecec3463d7136001
+### Get singer by id 
+GET http://cse341-node-project2-h4kd.onrender.com/singers/64bb14b235ad9024a2946fce
 
 ### Create singer
 POST http://cse341-node-project2-h4kd.onrender.com/singers HTTP/1.1
