@@ -43,6 +43,10 @@
         }
       },
       "post": {
+        "get": {
+          "tags": [
+            "Singers Collection"
+          ],
         "description": "Add a singer",
         "parameters": [
           {
@@ -198,6 +202,10 @@
     },
     "/albums/": {
       "get": {
+        "get": {
+          "tags": [
+            "Albums Collection"
+          ],
         "description": "Get all albums ",
         "produces": [
           "application/json"
