@@ -1,6 +1,4 @@
-### LOCALHOST
-
-### SINGERS
+### LOCALHOST || SINGERS
 ### Get all singers
 GET http://localhost:8000/singers HTTP/1.1
 
@@ -22,7 +20,7 @@ content-type: application/json
 }
 
 ### Update singer
-PUT http://localhost:8000/singers/64bb365bda25c520846cd651 HTTP/1.1
+PUT http://localhost:8000/singers/64bb63bc2e97e0ddd1a27c96 HTTP/1.1
 content-type: application/json
 
 {
@@ -36,10 +34,10 @@ content-type: application/json
 }
 
 ### Delete singer
-DELETE http://localhost:8000/singers/64bb365bda25c520846cd651 HTTP/1.1
+DELETE http://localhost:8000/singers/64bb63bc2e97e0ddd1a27c96 HTTP/1.1
 content-type: application/json
 
-### ALBUMS
+### LOCALHOST || ALBUMS
 ### Get all albums
 GET http://localhost:8000/albums HTTP/1.1
 
@@ -59,7 +57,7 @@ content-type: application/json
 }
 
 ### Update singer
-PUT http://localhost:8000/albums/64bb51df2ffcd0c14622299c HTTP/1.1
+PUT http://localhost:8000/albums/64bb64252e97e0ddd1a27c97 HTTP/1.1
 content-type: application/json
 
 {
@@ -71,12 +69,10 @@ content-type: application/json
 }
 
 ### Delete singer
-DELETE http://localhost:8000/albums/64bb51df2ffcd0c14622299c HTTP/1.1
+DELETE http://localhost:8000/albums/64bb64252e97e0ddd1a27c97 HTTP/1.1
 content-type: application/json
 
-### PRODUCTION DEPLOY
-
-### SINGERS
+### PRODUCTION DEPLOY || SINGERS
 
 ### Get all singers
 GET http://cse341-node-project2-h4kd.onrender.com/singers HTTP/1.1
@@ -116,7 +112,7 @@ content-type: application/json
 DELETE http://cse341-node-project2-h4kd.onrender.com/singers/64baed6920458270a21a8e8e HTTP/1.1
 content-type: application/json
 
-### ALBUMS
+### PRODUCTION DEPLOY || ALBUMS
 
 ### Get all albums
 GET http://cse341-node-project2-h4kd.onrender.com/albums HTTP/1.1
