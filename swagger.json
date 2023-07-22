@@ -91,6 +91,9 @@
     },
     "/singers/{id}": {
       "get": {
+        "tags": [
+          "Singers Collection"
+        ],
         "description": "Search singer by id",
         "produces": [
           "application/json"
