@@ -5,7 +5,7 @@
 GET http://localhost:8000/singers HTTP/1.1
 
 ### Get singer by id 
-GET http://localhost:8000/singers/64bb14b235ad9024a2946fce
+GET http://localhost:8000/singers/64bb14b235ad9024a2946fce HTTP/1.1
 
 ### Create singer
 POST http://localhost:8000/singers HTTP/1.1
@@ -44,7 +44,7 @@ content-type: application/json
 GET http://localhost:8000/albums HTTP/1.1
 
 ### Get album by id 
-GET http://localhost:8000/albums/64bb51395c35ca2968f6ef61
+GET http://localhost:8000/albums/64bb51395c35ca2968f6ef61 HTTP/1.1
 
 ### Create album
 POST http://localhost:8000/albums HTTP/1.1
@@ -79,10 +79,10 @@ content-type: application/json
 ### SINGERS
 
 ### Get all singers
-GET http://cse341-node-project2-h4kd.onrender.com/singers
+GET http://cse341-node-project2-h4kd.onrender.com/singers HTTP/1.1
 
 ### Get singer by id 
-GET http://cse341-node-project2-h4kd.onrender.com/singers/64bb14b235ad9024a2946fce
+GET http://cse341-node-project2-h4kd.onrender.com/singers/64bb14b235ad9024a2946fce HTTP/1.1
 
 ### Create singer
 POST http://cse341-node-project2-h4kd.onrender.com/singers HTTP/1.1
@@ -119,10 +119,10 @@ content-type: application/json
 ### ALBUMS
 
 ### Get all albums
-GET http://cse341-node-project2-h4kd.onrender.com/albums
+GET http://cse341-node-project2-h4kd.onrender.com/albums HTTP/1.1
 
 ### Get singer by id 
-GET http://cse341-node-project2-h4kd.onrender.com/albums/64bb14b235ad9024a2946fce
+GET http://cse341-node-project2-h4kd.onrender.com/albums/64bb14b235ad9024a2946fce HTTP/1.1
 
 ### Create singer
 POST http://cse341-node-project2-h4kd.onrender.com/albums HTTP/1.1

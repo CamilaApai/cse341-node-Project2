@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "My API",
-    "description": "Description",
+    "description": "API Documentation for the Singers and Albums collections.",
     "version": "1.0.0"
   },
   "host": "cse341-node-project2-h4kd.onrender.com",
@@ -13,7 +13,10 @@
   "paths": {
     "/api-docs": {
       "get": {
-        "description": "",
+        "tags": [
+          "API Documentation"
+        ],
+        "description": "This is the API Documentation",
         "responses": {
           "default": {
             "description": ""
@@ -23,7 +26,10 @@
     },
     "/singers/": {
       "get": {
-        "description": "",
+        "tags": [
+          "Singers Collection"
+        ],
+        "description": "Get all singers ",
         "produces": [
           "application/json"
         ],
@@ -37,7 +43,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Add a singer",
         "parameters": [
           {
             "name": "body",
@@ -85,7 +91,7 @@
     },
     "/singers/{id}": {
       "get": {
-        "description": "",
+        "description": "Search singer by id",
         "produces": [
           "application/json"
         ],
@@ -110,7 +116,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update the singer information by id",
         "parameters": [
           {
             "name": "id",
@@ -165,7 +171,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete a singer by id",
         "parameters": [
           {
             "name": "id",
@@ -192,7 +198,7 @@
     },
     "/albums/": {
       "get": {
-        "description": "",
+        "description": "Get all albums ",
         "produces": [
           "application/json"
         ],
@@ -206,7 +212,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Add a album",
         "parameters": [
           {
             "name": "body",
@@ -248,7 +254,7 @@
     },
     "/albums/{id}": {
       "get": {
-        "description": "",
+        "description": "Search album by id",
         "produces": [
           "application/json"
         ],
@@ -273,7 +279,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update the album information by id",
         "parameters": [
           {
             "name": "id",
@@ -322,7 +328,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete a album by id",
         "parameters": [
           {
             "name": "id",
