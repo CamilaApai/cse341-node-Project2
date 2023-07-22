@@ -1,0 +1,79 @@
+{ 
+"album": {
+    "artist": "Taylor Swift",
+    "albumAmount": "10 studio albums",
+    "firstAlbum": "Taylor Swift",
+    "lastAlbum": "Midnights",
+    "mostSuccessfulAlbum": "1989"
+},
+
+"album2": {
+    "artist": "Adele",
+    "albumAmount": "3 studio albums",
+    "firstAlbum": "19",
+    "lastAlbum": "25",
+    "mostSuccessfulAlbum": "21" 
+},
+
+"album3": {
+    "artist": "Beyoncé",
+    "albumAmount": "8 studio albums",
+    "firstAlbum": "Dangerously in Love",
+    "lastAlbum": "The Lion King: The Gift",
+    "mostSuccessfulAlbum": "Lemonade"
+},
+
+"album4": {
+    "artist": "Ed Sheeran",
+    "albumAmount": "5 studio albums",
+    "firstAlbum": "Plus",
+    "lastAlbum": "No.6 Collaborations Project",
+    "mostSuccessfulAlbum": "Divide"
+},
+
+"album5": {
+    "artist": "Lady Gaga",
+    "albumAmount": "6 studio albums",
+    "firstAlbum": "The Fame",
+    "lastAlbum": "Chromatica",
+    "mostSuccessfulAlbum": "The Fame" 
+},
+"album6": {
+    "artist": "Katy Perry",
+    "albumAmount": "6 studio albums",
+    "firstAlbum": "One of the Boys",
+    "lastAlbum": "Smile",
+    "mostSuccessfulAlbum": "Teenage Dream"
+},
+
+"album7": {
+    "artist": "Ariana Grande",
+    "albumAmount": "6 studio albums",
+    "firstAlbum": "Yours Truly",
+    "lastAlbum": "Positions",
+    "mostSuccessfulAlbum": "Thank U, Next"
+}
+,
+"album8": {
+    "artist": "Bruno Mars",
+    "albumAmount": "3 studio albums",
+    "firstAlbum": "Doo-Wops & Hooligans",
+    "lastAlbum": "24K Magic",
+    "mostSuccessfulAlbum": "Unorthodox Jukebox"
+},
+
+"album9": {
+    "artist": "Drake",
+    "albumAmount": "9 studio albums",
+    "firstAlbum": "Thank Me Later",
+    "lastAlbum": "Certified Lover Boy",
+    "mostSuccessfulAlbum": "Views"
+},
+"album10": {
+    "artist": "Shawn Mendes",
+    "albumAmount": "4 studio albums",
+    "firstAlbum": "Handwritten",
+    "lastAlbum": "Wonder",
+    "mostSuccessfulAlbum": "Illuminate"
+}
+}

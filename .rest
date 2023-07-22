@@ -1,5 +1,6 @@
 ### LOCALHOST
 
+### SINGERS
 ### Get all singers
 GET http://localhost:8000/singers HTTP/1.1
 
@@ -39,7 +40,28 @@ content-type: application/json
 DELETE http://localhost:8000/singers/64bb365bda25c520846cd651 HTTP/1.1
 content-type: application/json
 
+### ALBUMS
+### Get all albums
+GET http://localhost:8000/albums HTTP/1.1
+
+### Get album by id 
+GET http://localhost:8000/albums/
+
+### Create album
+POST http://localhost:8000/albums HTTP/1.1
+content-type: application/json
+
+{
+"artist": "Taylor Swift",
+"albumAmount": "10 studio albums",
+"firstAlbum": "Taylor Swift",
+"lastAlbum": "Midnights",
+"mostSuccessfulAlbum": "1989"
+}
+
 ### PRODUCTION DEPLOY
+
+### SINGERS
 
 ### Get all singers
 GET http://cse341-node-project2-h4kd.onrender.com/singers
@@ -78,3 +100,5 @@ content-type: application/json
 ### Delete singer
 DELETE http://cse341-node-project2-h4kd.onrender.com/singers/64baed6920458270a21a8e8e HTTP/1.1
 content-type: application/json
+
+### ALBUMS
